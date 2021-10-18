@@ -1,6 +1,13 @@
 .selected{
 	background-color:darkkhaki;
 }
-.content_header {
-	font-family: times new roman;
+h2, h3 {
+	text-align: center;
+}
+#container {
+	padding: 0 20px 0 20px;
+	background-color: antiquewhite;
+	float: left;
+	width: 1000px;
+	margin-left: 30px;
 }
