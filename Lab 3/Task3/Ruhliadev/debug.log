@@ -1,0 +1,21 @@
+[1011/194928.737:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1011/194929.063:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1011/194929.398:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/103227.317:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/103227.800:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/103228.254:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/130036.705:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/130037.051:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/130037.334:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/143505.381:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/143505.674:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/143505.964:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/170431.676:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/170431.836:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/170431.957:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/183810.518:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/183810.698:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/183810.837:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1012/184323.176:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/184323.335:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1012/184323.468:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
