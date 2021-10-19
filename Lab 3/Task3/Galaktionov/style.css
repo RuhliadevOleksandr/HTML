@@ -1,0 +1,201 @@
+body {
+    --myblue: rgb(50, 152, 242);
+    --myorange: rgb(255, 151, 58);
+    --mydark: rgb(41, 41, 41);
+  }
+
+p{
+    text-align: center;
+    font-style: bold;
+    font-family: 'Organetto-Bold', 'Calibri', sans-serif;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+
+p.small{
+    font-size: 25px;
+}
+p.large{
+    font-size: 40px;
+}
+
+.container{
+    max-width: 1653px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 55px 0;
+    font-family: 'Calibri';
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu a{
+    background: black;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+}
+
+nav .city{
+    width: 20%;
+    background: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+}
+
+
+
+
+
+div.inside{
+    display: flex;
+    max-width: 700px;
+}
+
+ul.firstList{
+    font-family: 'Organetto-Bold', 'Calibri', sans-serif;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size: 25px;
+}
+
+li {
+    position: relative;
+    list-style-type: none;
+}
+ul li:before {
+    position: absolute;
+    left: -1.2em;
+    bottom: 0.3em;
+    content: ' ';
+    display: block;
+    width: 0.45em;
+    height: 0.45em;
+    background-color: var(--myorange);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+ul p{
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
+    text-transform: none;
+    text-align: left;
+    color: gray;
+    line-height: 25px;
+}
+
+
+
+
+
+div{
+    display: flex;
+    justify-content: space-around; 
+}
+
+div.second{
+    background-color: var(--mydark);
+    max-width: 1530px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+div.second div{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-bottom: 3%;
+}
+
+div.second img{
+    position: relative;
+    max-width: 30%;
+    border-color: var(--mydark);
+    border-radius: 3%;
+    border-width: 2px;
+}
+
+
+
+div.third{
+    align-items: flex-start;
+}
+
+div.third div{
+    display: block;
+    position: relative;
+    width: 600px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 25px;
+    color: var(--myorange);
+}
+ol li {
+    counter-increment: my-awesome-counter;
+}
+ol li::before {
+    
+    content:"0" counter(my-awesome-counter) " ";
+    color: var(--myblue);
+    font-weight: bold;
+    font-family: 'Organetto-Bold', 'Calibri', sans-serif;
+    font-size: 50px;
+}
+
+ol p{
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    text-transform: none;
+    text-align: left;
+    color: gray;
+    line-height: 25px;
+    font-weight:normal;
+}
+
+div.third img{
+    position: relative;
+    max-height: 30%;
+    max-width: 30%;
+    align-self: center;
+}
+
+
+.last{
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: "Organetto-Bold";  
+    src: url("Organetto-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
