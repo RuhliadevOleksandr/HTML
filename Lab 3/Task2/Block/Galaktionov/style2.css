@@ -1,0 +1,62 @@
+div{
+    border: 1px solid gray;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 300px;
+}
+p.top{
+    text-align: right;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+div.top{
+    height: 100px;
+    background-color: rgb(255, 204, 0);
+}
+
+div.mid{
+    height: 700px;
+}
+div.inside{
+    float: left;
+    height: 700px;
+    width: 30%;
+    margin-right: 15px;
+}
+div.inside_2{
+    float: left;
+    height: 680px;
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+div.red_block{
+    height: 80px;
+    width: 100%;
+    background-color: tomato;
+    position: relative;
+    top: 235px;
+}
+
+div.white_block{
+    background-color: white;
+    height: 50px;
+    width: 35%;
+    position: relative;
+    right: 30%;
+    top: 25%;
+}
+
+
+
