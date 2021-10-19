@@ -1,0 +1,123 @@
+body {
+    --myblue: rgb(50, 152, 242);
+    --myorange: rgb(255, 151, 58);
+    --mydark: rgb(41, 41, 41);
+    --mygray: #BC92AC;
+    background-color: var(--mydark);
+  }
+
+
+p.small{
+    font-size: 25px;
+}
+p.large{
+    font-size: 40px;
+}
+
+.container{
+    max-width: 1653px;
+    margin: 0 auto;
+    
+}
+
+header{
+    padding: 55px 0;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+}
+
+.menu a{
+    background: var(--myorange);
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+}
+
+
+ul {
+    list-style: none; 
+    margin: 0; 
+    padding-left: 0; 
+}
+
+
+nav.leftMenu li{
+    background: rgba(255, 151, 58, .5);
+    border-right: 4px solid #b19891;
+    margin-bottom: 3px;
+}
+
+nav.leftMenu a {
+    position: relative;
+
+    color: white;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px; 
+}
+  
+div.mid{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    height: 100%;
+}
+
+div.lefttArea{
+    width: 90%;
+}
+
+div.rightArea{
+    width: 70%;
+    border: 2 px solid black;
+}
+
+div.upper{
+    position: relative;
+    display: block;
+    height: 50%;
+    background-color: var(--mygray);
+    border: 2px solid black;
+}
+div.bottom{
+    position: relative;
+    display: block;
+    height: 50%;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+
+.triangleLeft{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 0; 
+    width: 0; ;
+    border-top: 150px solid gray;
+    border-right: 150px solid transparent;
+}
+
+.triangleRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 0; 
+    height: 0;
+    border-top: 150px solid gray;
+    border-left: 150px solid transparent;
+}
+    
