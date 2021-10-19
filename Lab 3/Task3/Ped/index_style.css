@@ -1,0 +1,46 @@
+.header { 
+    font-family: franklin gothic medium;
+    background:rgb(43, 43, 43);
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos { 
+    background:rgb(48, 156, 245);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-family: candara;
+    background:white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.text h2 {
+    font-family: franklin gothic medium;
+    color: #ff9100;
+    text-align: center;
+}
+
+.footer {
+    font-family: franklin gothic medium;
+    text-align: left;
+    color:white;
+    font-size: 30px;
+    background:#fc9a1b;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#clear {
+    clear: both;
+    height: 25px;
+}
