@@ -9,8 +9,6 @@ body {
     width: 100%;
     height: 120px;
     background-image: url(инструменты.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: franklin gothic medium;
     text-align: center;
     padding-top: 5%;
