@@ -1,0 +1,30 @@
+html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Облік заводського інвентаря</title>
+    </head>
+    <body>
+        <div class="title">
+            <p class="large">ОБЛІК ЗАВОДСЬКОГО ІНВЕНТАРЯ</p>
+        </div>
+        <header>
+            <nav class="container menu">
+                <div class="click">
+                    <button>Облік</button>
+                    <div class="leftMenu">
+                        <a href="#">Деталі на складі</a>
+                        <a href="#">Облік підприємства</a>
+                        <a href="#">Необхідний ремонт</a>
+                    </div>
+                </div>            
+                <a href="#" >Особи з правом доступу</a>
+                <a href="#" >Авторизація</a>
+        </header>
+            <div class="rightArea">
+                <div class="upper">Text1</div>
+                <div class="bottom">Text2</div>
+            </div>
+        </div>
+
+    </body>
+</html>
