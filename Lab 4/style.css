@@ -1,0 +1,18 @@
+.selected{
+	background-color:darkkhaki;
+}
+h2, h3 {
+	text-align: center;
+}
+#container {
+	padding: 0 20px 0 20px;
+	background-color: antiquewhite;
+	float: left;
+	width: 1000px;
+	margin-left: 30px;
+}
+
+iframe.forcode{
+	width: 600px;
+	height: 500px;
+}
