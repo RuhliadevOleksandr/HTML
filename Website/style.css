@@ -77,11 +77,13 @@ p.large{
     margin: 10px;
 }
     
-div.rightArea{
+div.infoArea{
     width: 100%;
     border: 2 px solid black;
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.upper{
@@ -99,5 +101,10 @@ div.bottom{
     height: 800px;
     background-color: blanchedalmond;
     border: 2px solid black;
+}
+
+p.areaTitle{
+    color: darkgreen;
+    text-align: center;
 }
     
