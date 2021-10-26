@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide show</title>
+        <link rel="stylesheet" href="Task.css">
+    </head>
+    <body>
+            <div class="flexContainer" id="slides">
+                <img src="image.jpg" class="slide showing">
+                <img src="image2.jpg" class="slide">
+                <img src="image3.jpg" class="slide">
+                <img src="image4.jpg" class="slide">
+                <img src="image5.jpg" class="slide">
+                <img src="image6.jpg" class="slide">
+            </div>
+            <div class="flexContainer" style="height: 50px;">
+                <button onclick="makeFaster()">Make faster</button>
+                <input type="range" id="sizeRange" oninput="changeSize()">
+                <button onclick="makeSlower()">Make slower</button>
+            </div>
+        <script src="Task.js"></script>
+    </body>
+</html>
