@@ -1,0 +1,22 @@
+.textIn{
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+.buttons{
+    width: 200px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 20px;
+    background-color: blanchedalmond;
+}
+div.output{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style:normal;
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+}

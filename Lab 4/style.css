@@ -22,4 +22,7 @@ img {
 iframe.forcode {
   width: 600px;
   height: 500px;
+  margin: auto auto;
+  display:block;
 }
+
