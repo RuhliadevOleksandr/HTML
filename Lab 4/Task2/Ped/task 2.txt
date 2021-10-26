@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>лаба 4 | 2 задание</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="area">
+                <input type='text' id="output">
+            </div>
+            <div class="buttons">
+                <p>
+                    <input type="button" class="btn" value="7" onclick='symbol("7")'>
+                    <input type="button" class="btn" value="8" onclick='symbol("8")'>
+                    <input type="button" class="btn" value="9" onclick='symbol("9")'>
+                    <input type="button" class="btn" value="/" onclick='symbol("/")'>
+                    <input type="button" class="btn" value="%" onclick='symbol("%")'>
+                </p>
+                <p>
+                    <input type="button" class="btn" value="4" onclick='symbol("4")'>
+                    <input type="button" class="btn" value="5" onclick='symbol("5")'>
+                    <input type="button" class="btn" value="6" onclick='symbol("6")'>
+                    <input type="button" class="btn" value="*" onclick='symbol("*")'>
+                    <input type="button" class="btn" value="√" onclick='sqrt()'>
+                </p>
+                <p>
+                    <input type="button" class="btn" value="1" onclick='symbol("1")'>
+                    <input type="button" class="btn" value="2" onclick='symbol("2")'>
+                    <input type="button" class="btn" value="3" onclick='symbol("3")'>
+                    <input type="button" class="btn" value="+" onclick='symbol("+")'>
+                    <input type="button" class="btn" value="-" onclick='symbol("-")'>
+                </p>
+                <p>
+                    <input type="button" class="btn" value="=" onclick='result()'>
+                    <input type="button" class="btn" value="C" onclick='discharge("")'>
+                </p>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
