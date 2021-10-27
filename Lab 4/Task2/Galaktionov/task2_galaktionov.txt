@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <textarea id='textIn'  class="textIn" name="areaIn" value="text"></textarea>
+        <p>
+            <input class="buttons" id="windowButton" type="button" value="Create new window">
+            <input class="buttons" id="boldButton" type="button" value="Make text bold">
+            <input class="buttons" id="italicButton" type="button" value="Make text italic">
+            <input class="buttons" id="underlineButton" type="button" value="Make text underline">
+            <input class="buttons" id="colorButton" type="button" value="Make text blue">
+            <input class="buttons" id="caseButton" type="button" value="Make text uppercase">
+        </p>
+        
+        <script src="script1.js"></script>
+    </body>
+</html>
