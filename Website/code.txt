@@ -1,6 +1,10 @@
-html>
+<html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            let now = new Date();
+            alert("Сайт створено для обліку складського інвентаря. Сьогоднішня дата: "+now.toLocaleDateString());
+        </script>
         <title>Облік заводського інвентаря</title>
     </head>
     <body>
@@ -10,21 +14,21 @@ html>
         <header>
             <nav class="container menu">
                 <div class="click">
-                    <button>Облік</button>
+                    <button id = 'button'>Облік</button>
                     <div class="leftMenu">
-                        <a href="#">Деталі на складі</a>
-                        <a href="#">Облік підприємства</a>
-                        <a href="#">Необхідний ремонт</a>
+                        <a name='dropDown' href="#">Деталі на складі</a>
+                        <a name='dropDown' href="#">Облік підприємства</a>
+                        <a name='dropDown' href="#">Необхідний ремонт</a>
                     </div>
                 </div>            
-                <a href="#" >Особи з правом доступу</a>
+                <a href="JavaScript:alert('Схема URL')">Особи з правом доступу</a>
                 <a href="#" >Авторизація</a>
+            </nav>
         </header>
-            <div class="rightArea">
-                <div class="upper">Text1</div>
-                <div class="bottom">Text2</div>
-            </div>
+        <div class="infoArea">
+             <div id='leftArea' class="upper"><p style="text-align: center;">Інформаційна панель</p></div>
+             <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
         </div>
-
+        <script src="script.js"></script>
     </body>
 </html>
