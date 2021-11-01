@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Weather forecast</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="openweather.js"></script>
+</head>
+
+<body>
+
+	<div class="weather-wrapper hide">
+
+		<img src="" class="weather-icon" alt="Weather Icon" />
+
+		<p><strong>Місце</strong>
+		<br /><span class="weather-place"></span></p>
+
+		<p><strong>Температура</strong>
+		<br /><span class="weather-temperature"></span> (<span class="weather-min-temperature"></span> - <span class="weather-max-temperature"></span>)</p>
+
+		<p><strong>Вологість</strong>
+		<br /><span class="weather-humidity"></span></p>
+
+		<p><strong>Швидкість вітру</strong>
+		<br /><span class="weather-wind-speed"></span></p>
+
+		<p><strong>Схід сонця</strong>
+		<br /><span class="weather-sunrise"></span></p>
+
+		<p><strong>Захід сонця</strong>
+		<br /><span class="weather-sunset"></span></p>
+
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
