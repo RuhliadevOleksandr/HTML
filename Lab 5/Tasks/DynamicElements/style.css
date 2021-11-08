@@ -1,0 +1,38 @@
+#accordion .ui-accordion-header-active{
+    background-color: goldenrod;
+    border-color: gold;
+}
+
+#accordion .ui-accordion-header{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+
+#accordion {
+    width: 37%;
+    margin-left: 20px;
+    float: left;
+}
+
+#menu {
+    margin-left: 15%;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+#menu .ui-menu-item{
+    height: 73px;
+    line-height: 65px;
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    
+}
+
+#menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active{
+    border-color: gold;
+    background-color: goldenrod;
+    border-radius: 20%;
+    transition: 1s;
+}
