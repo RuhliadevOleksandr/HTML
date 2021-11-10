@@ -1,0 +1,152 @@
+.menu a{
+    background: black;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+.menu{
+	display: flex;
+    justify-content: center;
+}
+header{
+    padding: 25px 0;
+    font-family: 'Calibri';
+    margin-bottom: 0px;
+}
+nav{
+	margin-bottom: 0px;
+}
+select {
+  display: inline-block;
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.city{
+    width: 20%;
+    background: #252425;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+     background-image:
+    linear-gradient(45deg, transparent 50%, #3280eb 50%),
+    linear-gradient(135deg, #3280eb 50%, transparent 50%),
+    linear-gradient(to right, #252425, #252425);
+  background-position:
+    calc(100% - 35px) calc(0.75em + 2px),
+    calc(100% - 30px) calc(0.75em + 2px),
+    calc(100% - 1.5em) 0.2em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+.content{
+	background: rgb(188,188,189);
+	background: linear-gradient(90deg, rgba(188,188,189,0.8) 0%, rgba(255,255,255,1) 50%, rgba(188,188,189,0.8) 100%);
+	width: 95%;
+	margin: 0px auto;
+	height: 2700px;
+}
+h1{
+	font-family: 'Calibri';
+	font-weight: bold;
+	text-align: center;
+	font-size: 55px;
+	padding-top: 50px;
+}
+.flex_wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.col{
+	height: 800px;
+	background-color: white;
+	width: 300px;
+	padding: 20px 20px;
+
+}
+.col_head{
+	font-family: 'Calibri';
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+}
+.col_img_bottom{
+	margin-top: 100px;
+}
+.col_img_top{
+	margin-top: 30px;
+	margin-bottom: 150px;
+	margin-left: 10px;
+}
+.col_content1{
+	font-family: 'Calibri';
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.col_content2{
+	font-family: 'Calibri';
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+
+}
+.col_content3{
+	font-family: 'Calibri';
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 37px;
+}
+.col_content4{
+	font-family: 'Calibri';
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+
+}
+.stud_wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.img1{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 510px;
+	height: 500px;
+}
+
+.img2{
+	float: left;
+	width: 750px;
+	margin-left: 10px;
+	margin-right: 35px;
+}
+h5{
+	font-family: 'Calibri';
+	font-size: 35px;
+}
+.footer_content{
+	font-family: 'Calibri';
+	font-size: 30px;
+}
+span{
+	color: #01d0f6;
+}
