@@ -1,0 +1,24 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ׁמצ³אכüם³ לונוז³</title>
+	<script src="jquery.prettySocial.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+<h1 style="margin-top:150px" align="center"></h1>
+	<div>
+		<div class="links">
+			<a href="http://twitter.com" class="prettySocial fa fa-twitter"></a>
+			<a href="http://facebook.com" class="prettySocial fa fa-facebook"></a>
+			<a href="http://plus.google.com" class="prettySocial fa fa-google-plus"></a>
+			<a href="http://pinterest.com" class="prettySocial fa fa-pinterest"></a>
+		</div>
+		
+	</div>
+</body>
+</html>

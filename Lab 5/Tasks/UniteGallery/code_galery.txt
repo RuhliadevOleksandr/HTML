@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Gallery</title>
+
+	<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>	
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+	
+	<script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+	<link rel='stylesheet' 		  href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+	
+</head>
+
+<body>
+	
+	<div id="gallery" style="display:none;">
+	
+		<img alt="Preview Image 1"
+			 src="http://lorempixel.com/100/55/nature/?1"
+			 data-image="http://lorempixel.com/900/500/nature/?1"
+			 data-description="Preview Nature Image 1">
+		
+		<img alt="Preview Image 2"
+			 src="http://lorempixel.com/100/55/nature/?2"
+			 data-image="http://lorempixel.com/900/500/nature/?2"
+			 data-description="Preview Nature Image 2">
+			 
+		<img alt="Preview Image 3"
+			 src="http://lorempixel.com/100/55/nature/?3"
+			 data-image="http://lorempixel.com/900/500/nature/?3"
+			 data-description="Preview Nature Image 3">
+			
+		<img alt="Preview Image 4"
+			 src="http://lorempixel.com/100/55/nature/?4"
+			 data-image="http://lorempixel.com/900/500/nature/?4"
+			 data-description="Preview Nature Image 4">
+		
+		<img alt="Preview Image 5"
+			 src="http://lorempixel.com/100/55/nature/?5"
+			 data-image="http://lorempixel.com/900/500/nature/?5"
+			 data-description="Preview Nature Image 5">
+
+	</div>
+	
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery();
+
+		});
+		
+	</script>
+
+
+</body>
+</html>
