@@ -1,0 +1,15 @@
+input:invalid{
+	border: 1px solid red;
+}
+input:valid{
+	border: 1px solid black;
+}
+label{
+	font-family: 'Calibri';
+	font-size: 25px;
+
+}
+input{
+	width: 150px;
+	margin-left: 10px;
+}

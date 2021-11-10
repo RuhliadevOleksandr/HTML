@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>LAB4</title>
+</head>
+<body>
+	<form class="form" name="form">
+		<label for="choose">¬вед≥ть ц≥ле число: </label>
+		<input id="int" pattern="^[0-9]*$">
+		<button id="intB">Submit</button>
+	</form>
+	<form class="form">
+		<label for="choose">¬вед≥ть д≥йсне число: </label>
+		<input id="real" pattern="^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$">
+		<button id="realB">Submit</button>
+	</form>
+	<form class="form">
+		<label for="choose">¬вед≥ть дату народженн€: </label>
+		<input id="date" pattern="^(0?[1-9]|[12][0-9]|3[01])[.](0?[1-9]|1[012])[.]\d{4}$">
+		<button id="dateB">Submit</button>
+	</form>
+	<form class="form" id="pform">
+		<label for="choose">¬вед≥ть пароль: </label>
+		<input id="pass" required>
+
+	</form>
+	<form class="form" id="pform">
+		<label for="choose">ѕовтор≥ть пароль: </label>
+		<input id="pass2" required>
+		<button id="passB">Submit</button>
+	</form>
+	<script src="script2.js"></script>
+</body>
+</html>
