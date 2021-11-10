@@ -1,0 +1,12 @@
+p{
+			font-family: bald;
+			color: black;
+			font-size: larger;
+			margin-left: 50px;
+		}
+		p.blue{
+			font-family: bald;
+			color: white;
+			font-size: larger;
+			margin-left: 50px;
+}
