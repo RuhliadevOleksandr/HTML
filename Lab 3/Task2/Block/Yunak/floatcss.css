@@ -1,0 +1,47 @@
+p{
+			font-family: bald;
+			color: black;
+			font-size: larger;
+			margin-left: 50px;
+		}
+		p.blue{
+			font-family: bald;
+			color: white;
+			font-size: larger;
+			margin-left: 50px;
+		}
+		#div1{
+			width: 100%;
+			background-color: blue;
+			height: 150px;
+
+		}
+		#div2{
+			width: 33%;
+			background-color: yellow;
+			height: 1500px;
+			float: left;
+		}
+		#div3{
+			width: 33%;
+			background-color: white;
+			height: 1500px;
+			float: left;
+		}
+		#div4{
+			width: 33%;
+			background-color: yellow;
+			height: 1500px;
+			float: right;
+		}
+		#div5{
+			width: 100%;
+			background-color: blue;
+			height: 150px;
+			clear: both;
+		}
+		#div1, #div2, #div4, #div5{
+			padding-top: 50px;
+			margin-right: 0px;
+			border: 1px solid black;
+		}

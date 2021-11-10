@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LAB3</title>
+	<link rel="stylesheet" type="text/css" href="floatcss.css">
+</head>
+<body>
+	<div id="div1"><p class="blue">1</p></div>
+	<div id="div2"><p>5</p></div>
+	<div id="div3"><p>4</p></div>
+	<div id="div4"><p>2</p></div><br>
+	<div id="div5"><p class="blue">3</p></div>
+</body>
+</html>
