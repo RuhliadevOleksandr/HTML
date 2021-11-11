@@ -18,19 +18,14 @@ dateB.onclick = function(){
 	return false;
 }
 
-pform.onmouseleave = function(){
-	pass = document.getElementById('pass').value;
-	document.getElementById('passB').disabled = false;
-	return false;
-}
 
 passB.onclick = function(){
 	pass2 = document.getElementById('pass2').value;
-	if(pass != pass2){
-		document.getElementById('passB').disabled = true;
+	pass = document.getElementById('pass').value;
+	if(pass == pass2){
+		alert("Passwords are equal");
 	} else{
-		document.getElementById('passB').disabled = false;
-		alert(pass2);
+		alert("Passwords are not equal");
 	}
 	return false;
 }

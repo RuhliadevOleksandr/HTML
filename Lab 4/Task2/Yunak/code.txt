@@ -7,29 +7,29 @@
 </head>
 <body>
 	<form class="form" name="form">
-		<label for="choose">Введіть ціле число: </label>
+		<label for="choose">Р’РІРµРґС–С‚СЊ С†С–Р»Рµ С‡РёСЃР»Рѕ: </label>
 		<input id="int" pattern="^[0-9]*$">
-		<button id="intB">Submit</button>
+		<button id="intB">РџРµСЂРµРІС–СЂРёС‚Рё</button>
 	</form>
 	<form class="form">
-		<label for="choose">Введіть дійсне число: </label>
+		<label for="choose">Р’РІРµРґС–С‚СЊ РґС–Р№СЃРЅРµ С‡РёСЃР»Рѕ: </label>
 		<input id="real" pattern="^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$">
-		<button id="realB">Submit</button>
+		<button id="realB">РџРµСЂРµРІС–СЂРёС‚Рё</button>
 	</form>
 	<form class="form">
-		<label for="choose">Введіть дату народження: </label>
+		<label for="choose">Р’РІРµРґС–С‚СЊ РґР°С‚Сѓ РЅР°СЂРѕРґР¶РµРЅРЅСЏ: </label>
 		<input id="date" pattern="^(0?[1-9]|[12][0-9]|3[01])[.](0?[1-9]|1[012])[.]\d{4}$">
-		<button id="dateB">Submit</button>
+		<button id="dateB">РџРµСЂРµРІС–СЂРёС‚Рё</button>
 	</form>
 	<form class="form" id="pform">
-		<label for="choose">Введіть пароль: </label>
-		<input id="pass" required>
+		<label for="choose">Р’РІРµРґС–С‚СЊ РїР°СЂРѕР»СЊ *: </label>
+		<input id="pass" type="password" required>
 
 	</form>
 	<form class="form" id="pform">
-		<label for="choose">Повторіть пароль: </label>
-		<input id="pass2" required>
-		<button id="passB">Submit</button>
+		<label for="choose">РџРѕРІС‚РѕСЂС–С‚СЊ РїР°СЂРѕР»СЊ *: </label>
+		<input id="pass2" type="password" required>
+		<button id="passB">РџРµСЂРµРІС–СЂРёС‚Рё</button>
 	</form>
 	<script src="script2.js"></script>
 </body>
