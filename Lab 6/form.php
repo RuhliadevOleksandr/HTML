@@ -31,31 +31,50 @@
 
     <main>
         <aside>
-            <div style="line-height: 20px;"  class="selected">
-                <a href="#">Тема та Постановка задачі<br> Лабораторної роботи №6</a>
+            <div style="line-height: 20px;">
+                <a href="main.html">Тема та Постановка задачі<br> Лабораторної роботи №6</a>
             </div>
         </aside>
 
         <div id="container">
-            <h3>Тема та Постановка задачі<br> Лабораторної роботи №6</h3>
-            <h4>
-                WEB-СЕРВЕРИ ТА ПРИНЦИПИ ЇХ РОБОТИ З КОРИСТУВАЧЕМ. 
-                <br>СЕРВЕРНІ WEB-ЗАСТОСУВАННЯ
-            </h4>
-            <p>
-                <strong>Мета:</strong> придбати практичні навички встановлення 
-                та конфігурування WEB-сервера, встановлення та налаштування Apache.
-            </p>
-            <h4>Завдання 2</h4>
-            <a href="dynamic_elements.html">Динамічні елементи</a>
-            <h4>Завдання 4</h4>
-            <a href="web_site.html">WEB-вузол</a>
-            <h4>Завдання 5</h4>
-            <a href="php-file.html">Зміна розширення .html на .php</a>
-            <h4>Завдання 7</h4>
-            <a href="using_utf-8.html">Використання кодування utf-8</a>
-            <h4>Завдання 9</h4>
-            <a href="form.php">Форма зворотнього зв’язку</a>
+            <h3>Форма</h3>
+            <?php
+                $isSubmited = false;
+                $first_name = $last_name = $date = '';
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (!empty($_POST["fname"])) 
+                    {
+                        $first_name = ($_POST["fname"]);
+                    } 
+                    if (!empty($_POST["lname"])) 
+                    {
+                        $last_name = ($_POST["lname"]);
+                    }
+                    $isSubmited = true;
+                    $date = date("m.d.y");
+                }
+            ?>
+            <div style="text-align: center";>
+		        <form method="post" name="reg" action="">
+			        <p>First name: </p>
+			        <input type="text" name="fname" size="40" value="<?php echo $first_name;?>">
+			        <p>Last name: </p>
+			        <input type="text" name="lname" size="40" value="<?php echo $last_name;?>">
+                    <br><br>
+			        <input type="submit" name="button" >
+		        </form>
+            </div>
+            <?php
+                if($isSubmited)
+                {
+                    echo "<h3>Ви вказали:</h3>";
+                    echo "<div style=\"text-align: center\";>";
+                    echo "<p>"."$first_name"."</p>";
+                    echo "<p>"."$last_name"."</p>";
+                    echo "<p>"."$date"."</p>";
+                    echo "</div>";
+                }
+            ?>
         </div>
     </main>
 </body>
