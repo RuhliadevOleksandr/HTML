@@ -81,8 +81,9 @@ img {
 }
 
 iframe.forcode {
-  width: 600px;
+  width: 90%;
   height: 500px;
-  margin: auto auto;
+  margin-top: 20px;
+  margin-left: 5%;
   display: block;
 }
