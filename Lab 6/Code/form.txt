@@ -75,7 +75,6 @@
                     echo "</div>";
                 }
             ?>
-            <iframe class="forcode"  src="Code/form.txt" frameborder="0"></iframe> 
         </div>
     </main>
 </body>
