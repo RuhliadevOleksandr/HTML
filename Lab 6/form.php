@@ -31,6 +31,7 @@
 
     <main>
         <aside>
+
         <div  style="line-height: 20px;">
                 <a href="main.html">Тема та Постановка задачі Лабораторної роботи №6  Посилання  на GitHub</a>
             </div>
@@ -51,6 +52,7 @@
             </div>
             <div>
                 <a href="summary.html">ВИСНОВКИ</a>
+
             </div>
         </aside>
 
