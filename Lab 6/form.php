@@ -31,9 +31,28 @@
 
     <main>
         <aside>
-            <div style="line-height: 20px;">
-                <a href="main.html">Тема та Постановка задачі<br> Лабораторної роботи №6</a>
+        <div style="line-height: 20px;"  class="selected">
+                <a href="lab6_p1.html">Тема та Постановка задачі<br> Лабораторної роботи №6</a>
             </div>
+            <div>
+                <a href="lab6_p2.html">Динамічні елементи 3 пункту</a>
+            </div>
+            <div>
+                <a href="lab6_p3.html">Установка WEB-серверу</a>
+            </div>
+            <div class="small_container">
+                <a href="lab6_p4.html">Запит для перегляду</a>
+            </div>
+            <div class="small_container">
+                <a href="lab6_p5.html">Кодировку utf-8</a>
+            </div>
+            <div>
+                <a href="lab6_p6.html">Зворотній зв'язок. Відображення дати</a>
+            </div>
+            <div>
+                <a href="lab6_p7.html">ВИСНОВКИ</a>
+            </div>
+        </aside>
         </aside>
 
         <div id="container">
