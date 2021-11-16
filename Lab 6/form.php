@@ -32,7 +32,7 @@
     <main>
         <aside>
         <div  style="line-height: 20px;">
-                <a href="#">Тема та Постановка задачі Лабораторної роботи №6  Посилання  на GitHub</a>
+                <a href="main.html">Тема та Постановка задачі Лабораторної роботи №6  Посилання  на GitHub</a>
             </div>
             <div>
                 <a href="dynamic_elements.html">Динамічні елементи 3 пункту</a>
@@ -43,11 +43,11 @@
             <div class="small_container">
                 <a href="web_site.html">Запит для перегляду</a>
             </div>
-            <div class="small_container, selected">
+            <div class="small_container">
                 <a href="using_utf-8.html">Кодування utf-8</a>
             </div>
-            <div>
-                <a href="form.php">Зворотній зв’язок. Відображення дати</a>
+            <div class="selected">
+                <a href="#">Зворотній зв’язок. Відображення дати</a>
             </div>
             <div>
                 <a href="summary.html">ВИСНОВКИ</a>
