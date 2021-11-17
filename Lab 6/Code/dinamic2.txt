@@ -1,0 +1,33 @@
+<script type="text/javascript"></script>
+        <script>
+            $(document).ready( function() {
+              $('#LeftMunu').menu();
+              $( "#selectMenu").selectmenu();
+            } );
+          </script>
+    </head>
+    <body>
+        <div class="title">
+            <p class="large">ОБЛІК ЗАВОДСЬКОГО ІНВЕНТАРЯ</p>
+        </div>
+        <header class="menu">
+            <ul id="leftMenu">
+                <li><a href="#">Облік</a>
+                    <ul>
+                        <li><a name='dropDown' href="#">Деталі на складі</a></li>
+                        <li><a name='dropDown' href="./accounting.html">Облік підприємства</a></li>
+                        <li><a name='dropDown' href="#">Необхідний ремонт</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">Особи з правом доступу</a></li>
+                <li><a href="./authorization.html" id="auth">Авторизація</a></li>
+        </header>
+        <div class="infoArea">
+            <div id='leftArea' class="upper"><p style="text-align: center;">Облік Підприємства</p>
+
+                <select id="selectMenu">
+                    <option>Оприбуткування</option>
+                    <option>Передача в експлуатацію</option>
+                    <option>Списання</option>
+                </select>
+            </div>
