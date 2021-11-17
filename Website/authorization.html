@@ -9,6 +9,7 @@
         <script>
             $(document).ready( function() {
               $('#LeftMunu').menu();
+              $(".my_games_control_group").controlgroup({});
                 });
           </script>
     </head>
@@ -29,14 +30,21 @@
                 <li><a href="./authorization.html" id="auth">Авторизація</a></li>
         </header>
         <div class="infoArea">
-            <div id='leftArea' class="upper"><p style="text-align: center;">Облік Підприємства</p>
-                <p><b>Ваше ім'я:</b><br>
-                    <input type="text" size="40">
-                </p>
+            <div id='leftArea' class="upper"><p style="text-align: center;">
+                <p><b>Оберіть посаду:</b><br>
+                <div class="my_games_control_group">
+                    <input type="radio" name="type" id="radio_1">
+                    <label for="radio_1">Комірник</label><br>
+                    <input type="radio" name="type" id="radio_2">
+                    <label for="radio_2">Бухгалтер</label><br>
+                    <input type="radio" name="type" id="radio_3">
+                    <label for="radio_3">Матеріально відповідальна особа</label><br>
+                </div>
                 <p><b>Введіть пароль:</b><br>
                     <input type="text" size="40">
                 </p>
-            </div>
+        </div>
+        </p>
             <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
         </div>
         <script src="script.js"></script>
