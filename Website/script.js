@@ -24,4 +24,3 @@ menu[2].addEventListener('click', function() {
 });
 
 console.log(menu[0]);
-  

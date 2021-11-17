@@ -4,17 +4,12 @@
         <link rel="stylesheet" href="jquery-ui.min.css">
         <script src="jquery.js"></script>
         <script src="jquery-ui.min.js"></script>
-        <script type="text/javascript">
-            let now = new Date();
-            alert("Сайт створено для обліку складського інвентаря. Сьогоднішня дата: "+now.toLocaleDateString());
-        </script>
         <title>Облік заводського інвентаря</title>
-        <script type="text/javascript">
-            alert("Сайт створено для обліку складського інвентаря");
-        </script>
+        <script type="text/javascript"></script>
         <script>
             $(document).ready( function() {
               $('#LeftMunu').menu();
+              $( "#selectMenu").selectmenu();
             } );
           </script>
     </head>
@@ -35,8 +30,15 @@
                 <li><a href="./authorization.html" id="auth">Авторизація</a></li>
         </header>
         <div class="infoArea">
-             <div id='leftArea' class="upper"><p style="text-align: center;">Інформаційна панель</p></div>
-             <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
+            <div id='leftArea' class="upper"><p style="text-align: center;">Облік Підприємства</p>
+
+                <select id="selectMenu">
+                    <option>Оприбуткування</option>
+                    <option>Передача в експлуатацію</option>
+                    <option>Списання</option>
+                </select>
+            </div>
+            <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
         </div>
         <script src="script.js"></script>
 

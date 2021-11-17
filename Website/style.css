@@ -17,34 +17,44 @@ body {
     color: rgb(224, 0, 0);
 }
 
-.click {
-    position: relative;
-  display: inline-block;
+#LeftMenu, #LeftMenu ul{
+    list-style: none;
 }
 
-div.leftMenu {
-    display: none;
+#LeftMenu ul{
     position: absolute;
-    box-shadow: none;
-    z-index: 1;
+    display: none;
+    z-index: 999;
 }
 
-div.leftMenu a {
+#LeftMenu > li {
+    float: left;
+}
+
+#leftMenu li a {
     display: block;
-    background: rgb(95, 95, 94);
+    background:  rgb(224, 0, 0);
     text-align: center;
     font-family: Arial;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: white;   
-    width: 350px;
+    width: 400px;
     padding: 10px;
     margin: 10px; 
 }
 
-div.leftMenu a:hover {background-color: rgb(121, 121, 121);}
-.click:hover .leftMenu {display: block;}
+#LeftMenu li:hover ul {
+    display: block;}
+
+#LeftMenu ul li a {
+    background:  rgb(167, 0, 0);
+}
+
+#LeftMenu ul li:hover a {
+    background: #9b9b9b;
+}
 
 p.small{
     font-size: 25px;
@@ -64,19 +74,6 @@ p.large{
     flex-wrap: wrap;
 }
 
-.menu a, button{
-    background: var(--myred);
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color:white;
-    width: 400px;
-    padding: 10px;
-    margin: 10px;
-}
-    
 div.infoArea{
     width: 100%;
     border: 2 px solid black;
@@ -107,4 +104,13 @@ p.areaTitle{
     color: darkgreen;
     text-align: center;
 }
-    
+
+#selectMenu{
+    background:  rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    width: 60%;
+    height: 40px;
+    margin: 20px;
+}
