@@ -1,0 +1,8 @@
+SELECT 	photo.PhotoName AS 'Назва фото',
+		photo.Tema AS 'Тема фото', 
+        photographer.FullName AS 'ПІБ фотографа',
+        photostudio.StudioName AS 'Назва фотостудії',
+        photostorage.Adress AS 'Адреса архіву' 
+FROM 	photo LEFT JOIN photographer ON photo.PhotographerID = photographer.PhotographerID
+		LEFT JOIN photostudio ON photo.PhotoStudioID = photostudio.PhotoStudioID 
+        LEFT JOIN photostorage ON photo.StorageID = photostorage.StorageID
