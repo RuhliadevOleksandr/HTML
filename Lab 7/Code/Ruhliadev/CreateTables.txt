@@ -24,7 +24,7 @@ CREATE TABLE Photo (
 	PhotoName VARCHAR(20) NOT NULL,
  	Tema VARCHAR(20) NOT NULL,
  	DateOfCreating DATE,
- 	Annotation TEXT,
+ 	Description TEXT,
  	PhotoStudioID SMALLINT UNSIGNED,
  	FOREIGN KEY (PhotoStudioID) REFERENCES Photostudio (PhotoStudioID)
  	ON DELETE CASCADE ON UPDATE CASCADE,
