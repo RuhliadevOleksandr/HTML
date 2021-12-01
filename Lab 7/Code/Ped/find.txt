@@ -1,0 +1,3 @@
+select instrument.Name as 'Назва товару', instrument.Сondition as 'Стан',  product.Product as 'Вид товару', provider.Name as 'Постачальник', instrument.Characteristic as 'Характеристика', instrument.Price as 'Ціна' from instrument left join product on instrument.ID_product = product.ID left join provider on instrument.ID_provider = provider.ID
+ where Сondition='New'
+  

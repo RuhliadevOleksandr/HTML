@@ -1,0 +1,27 @@
+create database Computer_Engineering default character set utf8;
+use  Computer_Engineering;
+
+create table Provider (
+ID smallint unsigned auto_increment primary key, 
+Name varchar(50) not null)
+engine=InnoDB;
+
+create table Product (
+ID smallint unsigned auto_increment primary key, 
+Product varchar(50) not null)
+engine=InnoDB;
+
+create table Instrument (
+ID smallint unsigned auto_increment primary key, 
+Name varchar(50) not null, 
+Сondition varchar(50) not null, 
+Date_of_purchase date not null, 
+ID_provider smallint unsigned not null, 
+ID_product smallint unsigned not null,
+Characteristic varchar(200) not null,
+Price int not null,
+
+foreign key (ID_provider) references Provider (ID),
+foreign key (ID_product) references Product (ID)
+)engine=InnoDB;
+
