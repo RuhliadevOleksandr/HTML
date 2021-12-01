@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+table th{
+    border: 3px solid black;
+    width: 20%;
+    font-style: italic;
+    font-weight: lighter;
+}
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+    
+}
+.tablehead{
+    background-color: gold;
+    font-weight: bolder;
+}
+span{
+    margin-left: 2%;
+}
+input{
+    font-size: 25px;
+    color: rgb(53, 83, 139);
+}
+select{
+    font-size: 25px;
+    color: rgb(53, 83, 139);
+}
