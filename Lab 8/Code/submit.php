@@ -1,7 +1,7 @@
 <?php 
-    include 'form.php';
+    include 'example_form_add.php';
     echo "<br>";
-    $connection = new mysqli("localhost", "root", null, "accountinginventory") or die ("Could not connect:");
+    $connection = new mysqli("localhost", "root", null, "toolarchive") or die ("Could not connect:");
     if(isset($_POST['submitWorker']))
     {
         addWorker($connection, $_POST["firstName"], $_POST["lastName"]);
