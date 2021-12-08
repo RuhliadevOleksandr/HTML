@@ -1,0 +1,2 @@
+select Tool.Name as 'Інструмент, що потребує ремонту', Storage.Name as 'Місце зберігання', Storage.Adress as 'за адресою'
+from Tool left join Storage on Tool.StorageID=Storage.StorageID where Tool.Quality='Потребує ремонту'

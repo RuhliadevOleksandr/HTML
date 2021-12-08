@@ -1,0 +1,2 @@
+select Tool.Name as 'Інструмент, що використовується', Worker.FirstName as 'Користувач:', Worker.LastName as 'ПІБ'
+from Tool left join Worker on Tool.WorkerID=Worker.WorkerID where Tool.Description='У використанні'
