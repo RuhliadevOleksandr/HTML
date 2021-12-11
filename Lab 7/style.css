@@ -69,8 +69,6 @@ aside > div {
 }
 
 img {
-  margin-left: 5%;
-
   display: block;
   margin-top: 20px;
   margin-left: auto;
@@ -81,14 +79,14 @@ iframe.forcode {
   border: 0;
   width: 90%;
   height: 500px;
-  margin-top: 20px;
   margin-left: 5%;
+  margin-top: 20px;
   display: block;
 }
 
-img.smallimage {
-  margin-left: 25%;
-  width: 50%;
+img.largeImg {
+  margin-left: 5%;
+  width: 90%;
 }
 
 p {
