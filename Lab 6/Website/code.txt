@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+            let now = new Date();
+            alert("Сайт створено для обліку складського інвентаря. Сьогоднішня дата: "+now.toLocaleDateString());
+        </script>
+        <title>Облік заводського інвентаря</title>
+    </head>
+    <body>
+        <div class="title">
+            <p class="large">ОБЛІК ЗАВОДСЬКОГО ІНВЕНТАРЯ</p>
+        </div>
+        <header>
+            <nav class="container menu">
+                <div class="click">
+                    <button id = 'button'>Облік</button>
+                    <div class="leftMenu">
+                        <a name='dropDown' href="#">Деталі на складі</a>
+                        <a name='dropDown' href="#">Облік підприємства</a>
+                        <a name='dropDown' href="#">Необхідний ремонт</a>
+                    </div>
+                </div>            
+                <a href="JavaScript:alert('Схема URL')">Особи з правом доступу</a>
+                <a href="#" >Авторизація</a>
+            </nav>
+        </header>
+        <div class="infoArea">
+             <div id='leftArea' class="upper"><p style="text-align: center;">Інформаційна панель</p></div>
+             <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

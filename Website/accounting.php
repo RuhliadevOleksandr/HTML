@@ -1,3 +1,4 @@
+<?php session_start()?>
 <html>
     <head>
         <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
@@ -21,16 +22,25 @@
             <ul id="leftMenu">
                 <li><a href="#">Облік</a>
                     <ul>
-                        <li><a name='dropDown' href="#">Деталі на складі</a></li>
-                        <li><a name='dropDown' href="./accounting.html">Облік підприємства</a></li>
-                        <li><a name='dropDown' href="#">Необхідний ремонт</a></li>
+                        <li><a name='dropDown' href="storage.php">Деталі на складі</a></li>
+                        <li><a name='dropDown' href="accounting.php">Облік підприємства</a></li>
+                        <li><a name='dropDown' href="repair.php">Необхідний ремонт</a></li>
                     </ul>
                 </li>  
                 <li><a href="#">Особи з правом доступу</a></li>
-                <li><a href="./authorization.html" id="auth">Авторизація</a></li>
+                <li><a href="authorization/authorization.php" id="auth">Авторизація</a></li>
         </header>
         <div class="infoArea">
-            <div id='leftArea' class="upper"><p style="text-align: center;">Облік Підприємства</p>
+            <div id='leftArea' class="upper"><h2>Облік Підприємства</h2>
+                
+                <!-- Тут идет проверка авторизации, если данные некорренктные, то перейти на страницу "неудачной авторизации" -->
+                <?php
+                    if($_SESSION['occupation']!='accountant'){
+                        header('Location: authorization/failed.php');
+                    }
+                ?>
+             
+                <form action="../index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
 
                 <select id="selectMenu">
                     <option>Оприбуткування</option>
@@ -38,9 +48,8 @@
                     <option>Списання</option>
                 </select>
             </div>
-            <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
+            <div id='rightArea' class="bottom"><h2>Результати запиту</h2></div>
         </div>
-        <script src="script.js"></script>
 
     </body>
 </html>
