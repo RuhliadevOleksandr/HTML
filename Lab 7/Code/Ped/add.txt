@@ -1,0 +1,122 @@
+<?php
+    require_once("connect.php");
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    
+    if (isset($_POST['submitButton'])) 
+    {
+        $Name = $_POST['Name_instrument'];
+        $Condition = $_POST['Condition'];
+        $Date = $_POST['Date'];
+        $Provider = $_POST['Provider'];
+        $Product = $_POST['Product'];
+        $Characteristic = $_POST['Characteristic'];
+        $Price = $_POST['Price'];
+        
+        if($Provider=="1"){$Provider=1;}
+        else if($Provider=="2"){$Provider=2;}
+        else if($Provider=="3"){$Provider=3;}
+        else{$Provider=4;}
+
+        if($Product=="1"){$Product=1;}
+        else if($Product=="2"){$Product=2;}
+        else if($Product=="3"){$Product=3;}
+        else{$Product=4;}
+        
+        $query = "INSERT INTO instrument (Name, Сondition, Date_of_purchase, ID_provider, ID_product, Characteristic, Price) VALUES ('$Name', '$Condition', '$Date', '$Provider', '$Product', '$Characteristic','$Price')";
+        $result = mysqli_query($connect, $query) or die("Ошибка " . mysqli_error($connect));
+        if ($result == true) {
+            echo "Ваши данные отправлены!";
+        }
+        else {
+            echo "По каким-то причинам Ваши данные не были отправлены!";
+        }
+    }
+
+    function get_rows($query, $connect){
+        $result = mysqli_query($connect, $query);
+        $rows = mysqli_fetch_all($result,1);
+        return  $rows;
+    }
+    
+    function get_all($connect){
+        $query = "SELECT Name, Сondition, Date_of_purchase, Characteristic, Price FROM instrument";
+        $all_instruments = get_rows($query, $connect);
+        return $all_instruments;
+    }
+
+    function add_element($connect){
+        $Name_add = $_POST['Name_instrument'];
+        $Condition_add = $_POST['Condition'];
+        $Date_add = $_POST['Date'];
+        $query = "SELECT Name, Сondition, Date_of_purchase, Characteristic, Price FROM instrument where Name='$Name_add' AND Сondition='$Condition_add' AND Date_of_purchase='$Date_add'";
+        $add_element = get_rows($query, $connect);
+        return $add_element;
+    }
+ 
+    function find($connect){
+        $var=$_POST['Name'];
+        $query = "SELECT Name, Сondition, Date_of_purchase, Characteristic, Price FROM instrument WHERE Name = '$var'";
+        $find_instrument = get_rows($query, $connect);
+        return $find_instrument;
+    }
+
+    function add_table_rows($rows)
+    {
+        foreach ($rows as $row) {
+        echo 
+        "
+        <tr>
+            <th>".$row['Name']."</th>
+            <th>".$row['Сondition']."</th>
+            <th>".$row['Date_of_purchase']."</th>
+            <th>".$row['Characteristic']."</th>
+            <th>".$row['Price']."</th>
+        </tr>
+        ";
+        }
+    }
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .st {
+                text-align: center;
+                background-color: rgb(240, 131, 42);
+            }
+            table{
+                text-align: left;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <table border="2px solid black">
+        <tr>
+            <th class="st">Название товара</th>
+            <th class="st">Состояние</th>
+            <th class="st">Дата покупки</th>
+            <th class="st">Характеристика</th>
+            <th class="st">Цена</th>
+        </tr>
+        <?php
+            if (isset($_POST['all_instruments'])) 
+            {
+                $all_instruments = get_all($connect);
+                add_table_rows($all_instruments);
+            }
+            if (isset($_POST['find'])) 
+            {
+                $find_instrument=find($connect);
+                add_table_rows($find_instrument);
+            }
+            if (isset($_POST['submitButton'])) 
+            {
+                $add_element=add_element($connect);
+                add_table_rows($add_element);
+            }
+        ?>
+    </table>
+</html>
+

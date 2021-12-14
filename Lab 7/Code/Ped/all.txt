@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <?php
+    include 'add.php';
+    ?>
+        <style>
+            .st {
+                text-align: center;
+                background-color: rgb(240, 131, 42);
+            }
+            table{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <table border="2px solid black">
+        <tr>
+            <th class="st">Название товара</th>
+            <th class="st">Состояние</th>
+            <th class="st">Дата покупки</th>
+            <th class="st">Характеристика</th>
+            <th class="st">Цена</th>
+        </tr>
+        <?php
+            require_once("connect.php");
+            if (isset($_POST['all_instruments'])) 
+            {
+                $all_instruments = get_all($connect);
+                add_table_rows($all_instruments);
+            }
+        ?>
+    </table>
+</html>
