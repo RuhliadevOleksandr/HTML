@@ -47,6 +47,7 @@
                     <option>Передача в експлуатацію</option>
                     <option>Списання</option>
                 </select>
+                <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
             <div id='rightArea' class="bottom"><h2>Результати запиту</h2></div>
         </div>

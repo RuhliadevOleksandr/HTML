@@ -99,6 +99,18 @@ div.bottom{
     background-color: blanchedalmond;
     border: 2px solid black;
 }
+div.language{
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    background-color: #5d3239;
+    border-radius: 10%;
+}
+.language img{
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+}
 
  h2{
     text-align: center;

@@ -29,6 +29,7 @@
                     }
                 ?>
                 <p>Тут відображені основні форми для взаємодії із базою даних.</p>
+                <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
              <div id='rightArea' class="bottom"><p style="text-align: center;">
                 <h2>Статус запитів</h2>
