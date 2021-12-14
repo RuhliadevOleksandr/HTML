@@ -87,7 +87,7 @@ div.upper{
     position: relative;
     display: block;
     width: 47%;
-    height: auto;
+    height: 800px;
     background-color: var(--mygray);
     border: 2px solid black;
 }
@@ -95,19 +95,9 @@ div.bottom{
     position: relative;
     display: block;
     width: 47%;
-    
+    height: 800px;
     background-color: blanchedalmond;
     border: 2px solid black;
-}
-
- h2{
-    text-align: center;
-}
-.bottom p{
-    text-align: center;
-}
-.upper p{
-    text-align: center;
 }
 
 p.areaTitle{
@@ -124,70 +114,3 @@ p.areaTitle{
     height: 40px;
     margin: 20px;
 }
-
-<<<<<<< HEAD
-.button{
-    background:  rgb(167, 0, 0);
-    text-align: center;
-    font-size: 18px;
-    width: 60%;
-    height: 30px;
-    margin: 20px 0 0 100px;
-}
-
-.int{
-    font-size: 14px;
-    width: 30%;
-    height: 28px;
-    margin: -10px 0 0 15px;
-}
-=======
-/* styling inputs */
-div#leftArea div{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-label{
-    font-size: 30px;  
-}
-input{
-    width: 100%;
-    font-size: 30px;
-}
-input[type=submit]{
-    background-color: rgba(224, 0, 0, 0.5);
-    border: none;
-    border-bottom: 1px solid black;
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-input[type=submit]:hover{
-    background-color: rgba(128, 128, 128, 0.5);
-}
-
-input[type=text]{
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-bottom: 3px solid black;
-    display: block;
-    
-    cursor: text;
-}
-
-input[type=radio]{
-    float: left;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-
-
->>>>>>> 5c704dacd36165f241edb11a4fbdab9662a52e98
