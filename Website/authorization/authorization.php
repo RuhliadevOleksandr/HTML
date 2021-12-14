@@ -5,7 +5,7 @@ session_start();
 <html>
     <head>
         <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="../style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
         <title>Облік заводського інвентаря</title>
@@ -39,7 +39,7 @@ session_start();
         <div class="infoArea">
             <div id='leftArea' class="upper"><p style="text-align: center;">
                 <div><form method="POST" action="login.php">
-                    <p><b>Оберіть посаду:</b><br>
+                    <p><b>Оберіть посаду:</b></p><br>
                     
                     <input type="radio" name="occupation" id="radio_1" value="keeper" <?php if ($_SESSION['occupation'] == 'keeper') echo 'checked'; ?>>
                     <label for="radio_1">Комірник</label><br>
