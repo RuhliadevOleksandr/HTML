@@ -20,7 +20,6 @@ session_start();
     </head>
     
     <body>
-    <p>text</p>
         <div class="title">
             <p class="large">ОБЛІК ЗАВОДСЬКОГО ІНВЕНТАРЯ</p>
         </div>
@@ -47,10 +46,10 @@ session_start();
                     <label for="radio_2">Бухгалтер</label><br>
 
                     <p><b>Введіть логін:</b><br>
-                        <input type="text" name="login"     value="<?php echo $_SESSION['login']?>">
+                        <input type="text" name="login" autocomplete="off"     value="<?php echo $_SESSION['login']?>">
                     </p>
                     <p><b>Введіть пароль:</b><br>
-                        <input type="text" name="password"  value="<?php echo $_SESSION['password']?>">
+                        <input type="text" name="password" autocomplete="off"  value="<?php echo $_SESSION['password']?>">
                     </p>
                     <input type="submit" name="logIn" value="Увійти в систему">
                     <input type="submit" name="logIn" value="Деавторизуватися" formaction="logout.php">

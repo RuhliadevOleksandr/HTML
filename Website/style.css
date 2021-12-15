@@ -88,6 +88,7 @@ div.upper{
     display: block;
     width: 47%;
     height: auto;
+    min-height: 800px;
     background-color: var(--mygray);
     border: 2px solid black;
 }
@@ -95,9 +96,22 @@ div.bottom{
     position: relative;
     display: block;
     width: 47%;
-    
+    height: auto;
+    min-height: 800px;
     background-color: blanchedalmond;
     border: 2px solid black;
+}
+div.language{
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    background-color: #5d3239;
+    border-radius: 10%;
+}
+.language img{
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
  h2{
@@ -125,7 +139,7 @@ p.areaTitle{
     margin: 20px;
 }
 
-<<<<<<< HEAD
+
 .button{
     background:  rgb(167, 0, 0);
     text-align: center;
@@ -141,7 +155,7 @@ p.areaTitle{
     height: 28px;
     margin: -10px 0 0 15px;
 }
-=======
+
 /* styling inputs */
 div#leftArea div{
     width: 50%;
@@ -190,4 +204,4 @@ input[type=radio]{
 
 
 
->>>>>>> 5c704dacd36165f241edb11a4fbdab9662a52e98
+

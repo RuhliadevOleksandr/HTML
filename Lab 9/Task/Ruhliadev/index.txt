@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAB9</title>
+    <meta charset="utf-8">
+    <style> .note{display: none;} .error{color:red;} main{display: flex; justify-content: space-around;} </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+    <main>
+        <div id="result" style="max-width: 40%;">
+            <h2>Add note to diary:</h2>
+            <form  name="diary" onsubmit="return addNote()"> 
+                <p>Tema: <input type="text" name="tema" id="tema"/></p>
+                <textarea name="text" rows="15" cols="40" id="text"></textarea> 
+                <p><input type="submit" value="Send" /></p>
+            </form>
+        </div>
+        <div id="container" style="max-width: 40%;"></div>
+        <script src="script.js"></script>
+        <script>
+            function addNote(){  
+                var div = document.getElementById('result');
+                var tema = document.getElementById("tema").value;
+                var text = document.getElementById("text").value;
+                if( tema != "" && text != ""){
+                    if(div.querySelectorAll(".error").length == 1)
+                        div.querySelectorAll(".error")[0].remove();
+                    showAddedNote(tema, text);
+                    $.post('data_processing.php', $('form').serialize());
+                }
+                else{
+                    if(div.querySelectorAll(".error").length == 0)
+                        div.insertAdjacentHTML('beforeend', '<span class="error">Tema and textarea must be initialize!</span>');
+                }
+                return false; 
+            } 
+            function deleteNote(index){
+                var div = document.getElementById('container');
+                var temas = div.querySelectorAll("h2");
+                if(confirm('Are you sure you want to delete the \"' + temas[index].innerHTML + '\"?')){  
+                    hideDeletedNote(index); 
+                    $.post('data_processing.php', "index=" + index);
+                }
+            }
+        </script>
+    </main>
+</body>        
+</html>

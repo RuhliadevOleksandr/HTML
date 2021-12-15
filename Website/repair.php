@@ -28,7 +28,7 @@
                         header('Location: authorization/failed.php');
                     }
                 ?>
-                
+                <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
              <div id='rightArea' class="bottom"><p style="text-align: center;">
                 <h2>Деталі, що потребують термінового ремонту</h2>
