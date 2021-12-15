@@ -40,13 +40,18 @@
                     }
                 ?>
              
-                <form action="../index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
+                <form action="add.php" method="post" name="add">
+                    <h4><u>Списання інструменту</u></h4>
+                    <h5>Інструмент:</h5>
+                    <p><input class="int" type="text" name="Name_instrument"></p>
+                    <h5>Назва складу:</h5>
+                    <p><input class="int" type="text" name="Name_storage"></p>
+                    
+                    <p><input class="button" type="submit" name="submitButton" value='Списанння'></p>
+                    <h4><u>Всі списані інструменти</u></h4>
+                    <p><input class="button" type="submit" name="submitButton" value='Списані інструменти'></p>
+                </form>
 
-                <select id="selectMenu">
-                    <option>Оприбуткування</option>
-                    <option>Передача в експлуатацію</option>
-                    <option>Списання</option>
-                </select>
                 <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
             <div id='rightArea' class="bottom"><h2>Результати запиту</h2></div>

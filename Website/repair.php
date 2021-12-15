@@ -28,6 +28,19 @@
                         header('Location: authorization/failed.php');
                     }
                 ?>
+
+                <form action="add.php" method="post" name="add">
+                    <h4><u>Інструменти які потребують ремонту</u></h4>
+                    <h5>Інструмент:</h5>
+                    <p><input class="int" type="text" name="Name_instrument"></p>
+                    <h5>Назва складу:</h5>
+                    <p><input class="int" type="text" name="Name_storage"></p>
+                    
+                    <p><input class="button" type="submit" name="submitButton" value='На ремонт'></p>
+                    <h4><u>Всі інструменти до ремонту</u></h4>
+                    <p><input class="button" type="submit" name="submitButton" value='Інструменти на ремонті'></p>
+                </form>
+
                 <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
              <div id='rightArea' class="bottom"><p style="text-align: center;">
