@@ -2,7 +2,7 @@
 $lang=$_GET['lang'];
 if(!empty($lang)){
     setcookie("lang", $lang, time()+365*24*60*60);
-    $_COOKIE['lang']=$lang;
+    $_COOKIE['lang'] = $lang;
 }
 
 
@@ -11,22 +11,7 @@ session_start();
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-        <!-- <script type="text/javascript">
-            let now = new Date();
-            alert("Сайт створено для обліку складського інвентаря. Сьогоднішня дата: "+now.toLocaleDateString());
-        </script>
-        <title>Облік заводського інвентаря</title>
-        <script type="text/javascript">
-            alert("Сайт створено для обліку складського інвентаря");
-        </script>
-        <script>
-            $(document).ready( function() {
-              $('#LeftMunu').menu();
-            } );
-          </script> -->
     </head>
     <body>
         <div class="language">
@@ -41,7 +26,7 @@ session_start();
         </div>
         
         <header class="menu">
-            <ul id="leftMenu">
+            <ul id="LeftMenu">
                 <li><a href="#">Облік</a>
                     <ul>
                         <li><a name='dropDown' href="storage.php">Деталі на складі</a></li>
@@ -91,7 +76,5 @@ session_start();
             </div>
         </div>
         <script src="script.js"></script>
-
-        
     </body>
 </html>

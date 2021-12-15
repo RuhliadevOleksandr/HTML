@@ -1,22 +1,9 @@
-<?php
-session_start();
-
-?>
+<?php session_start(); ?>
 <html>
     <head>
-        <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
         <link rel="stylesheet" href="../style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
         <title>Облік заводського інвентаря</title>
-        <script type="text/javascript"></script>
-        <script>
-            $(document).ready( function() {
-              $('#LeftMunu').menu();
-              $(".my_games_control_group").controlgroup({"direction": "vertical"});
-              $(document).tooltip();
-            });
-          </script>
     </head>
     
     <body>
@@ -73,8 +60,5 @@ session_start();
                 <form action="../index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
         </div>
-
-        
-        <script src="script.js"></script>
     </body>
 </html>

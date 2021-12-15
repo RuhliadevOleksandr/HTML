@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
+        <link rel="stylesheet" href="../Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
     </head>
     <body>
         <div class="title">
@@ -43,11 +43,10 @@
 
                 <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
-             <div id='rightArea' class="bottom"><p style="text-align: center;">
+            <div id='rightArea' class="bottom"><p style="text-align: center;">
                 <h2>Деталі, що потребують термінового ремонту</h2>
                 
             </div>
         </div>
-
     </body>
 </html>

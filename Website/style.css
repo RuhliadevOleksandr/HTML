@@ -1,228 +1,224 @@
 body {
-    --myred: rgb(224, 0, 0);
-    --mydark: rgb(41, 41, 41);
-    --mygray: #BC92AC;
-    background-color: var(--mydark);
-  }
+  --myred: rgb(224, 0, 0);
+  --mydark: rgb(41, 41, 41);
+  --mygray: #bc92ac;
+  background-color: var(--mydark);
+}
 
 .title {
-    width: 100%;
-    height: 120px;
-    background-image: url(инструменты.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: franklin gothic medium;
-    text-align: center;
-    padding-top: 5%;
-    color: rgb(224, 0, 0);
+  width: 100%;
+  height: 120px;
+  background-image: url(инструменты.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: franklin gothic medium;
+  text-align: center;
+  padding-top: 5%;
+  color: rgb(224, 0, 0);
 }
 
-#LeftMenu, #LeftMenu ul{
-    list-style: none;
+#LeftMenu,
+#LeftMenu ul {
+  list-style: none;
 }
 
-#LeftMenu ul{
-    position: absolute;
-    display: none;
-    z-index: 999;
+#LeftMenu ul {
+  position: absolute;
+  display: none;
+  z-index: 999;
 }
 
 #LeftMenu > li {
-    float: left;
+  float: left;
 }
 
 #leftMenu li a {
-    display: block;
-    background:  rgb(224, 0, 0);
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;   
-    width: 400px;
-    padding: 10px;
-    margin: 10px; 
+  display: block;
+  background: rgb(224, 0, 0);
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #LeftMenu li:hover ul {
-    display: block;}
+  display: block;
+}
 
 #LeftMenu ul li a {
-    background:  rgb(167, 0, 0);
+  background: rgb(167, 0, 0);
 }
 
 #LeftMenu ul li:hover a {
-    background: #9b9b9b;
+  background: #9b9b9b;
 }
 
-p.small{
-    font-size: 25px;
-}
-p.large{
-    font-size: 40px;
+p.small {
+  font-size: 25px;
 }
 
-.container{
-    max-width: 1653px;
-    margin: 0 auto;
+p.large {
+  font-size: 40px;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.container {
+  max-width: 1653px;
+  margin: 0 auto;
 }
 
-div.infoArea{
-    width: 100%;
-    border: 2 px solid black;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-div.upper{
-    position: relative;
-    display: block;
-    width: 47%;
-    height: auto;
-    min-height: 800px;
-    background-color: var(--mygray);
-    border: 2px solid black;
-}
-div.bottom{
-    position: relative;
-    display: block;
-    width: 47%;
-    height: auto;
-    min-height: 800px;
-    background-color: blanchedalmond;
-    border: 2px solid black;
-}
-div.language{
-    position: absolute;
-    z-index: 1;
-    right: 8px;
-    background-color: #5d3239;
-    border-radius: 10%;
-}
-.language img{
-    float: left;
-    cursor: pointer;
-    margin-left: 10px;
+div.infoArea {
+  width: 100%;
+  border: 2 px solid black;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
- h2{
-    text-align: center;
+div.upper {
+  position: relative;
+  display: block;
+  width: 47%;
+  height: auto;
+  min-height: 800px;
+  background-color: var(--mygray);
+  border: 2px solid black;
 }
-.bottom p{
-    text-align: center;
+div.bottom {
+  position: relative;
+  display: block;
+  width: 47%;
+  height: auto;
+  min-height: 800px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
 }
-.upper p{
-    text-align: center;
+div.language {
+  position: absolute;
+  z-index: 1;
+  right: 8px;
+  background-color: #5d3239;
+  border-radius: 10%;
 }
-
-p.areaTitle{
-    color: darkgreen;
-    text-align: center;
-}
-
-#selectMenu{
-    background:  rgb(255, 255, 255);
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    width: 60%;
-    height: 40px;
-    margin: 20px;
-}
-
-
-.button{
-    background:  rgb(167, 0, 0);
-    text-align: center;
-    font-size: 18px;
-    width: 60%;
-    height: 30px;
-    margin: 20px 0 0 100px;
+.language img {
+  float: left;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.int{
-    font-size: 14px;
-    width: 30%;
-    height: 28px;
-    margin: -10px 0 0 15px;
+h2 {
+  text-align: center;
+}
+.bottom p {
+  text-align: center;
+}
+.upper p {
+  text-align: center;
+}
+
+p.areaTitle {
+  color: darkgreen;
+  text-align: center;
+}
+
+#selectMenu {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  width: 60%;
+  height: 40px;
+  margin: 20px;
+}
+
+.button {
+  background: rgb(167, 0, 0);
+  text-align: center;
+  font-size: 18px;
+  width: 60%;
+  height: 30px;
+  margin: 20px 0 0 100px;
+}
+
+.int {
+  font-size: 14px;
+  width: 30%;
+  height: 28px;
+  margin: -10px 0 0 15px;
 }
 
 /* styling inputs */
-div#leftArea div{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+div#leftArea div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
-label{
-    font-size: 30px;  
+label {
+  font-size: 30px;
 }
-input{
-    width: 100%;
-    font-size: 30px;
+input {
+  width: 100%;
+  font-size: 30px;
 }
-input[type=submit]{
-    background-color: rgba(224, 0, 0, 0.5);
-    border: none;
-    border-bottom: 1px solid black;
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px 10px 10px 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-input[type=submit]:hover{
-    background-color: rgba(128, 128, 128, 0.5);
+input[type="submit"] {
+  background-color: rgba(224, 0, 0, 0.5);
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-input[type=text]{
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-bottom: 3px solid black;
-    display: block;
-    
-    cursor: text;
+input[type="submit"]:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
-input[type=radio]{
-    float: left;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid black;
+  display: block;
+
+  cursor: text;
 }
 
-
-.button{
-    background:  rgb(167, 0, 0);
-    text-align: center;
-    font-size: 18px;
-    width: 60%;
-    height: 30px;
-    margin: 20px 0 0 100px;
+input[type="radio"] {
+  float: left;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.int{
-    font-size: 14px;
-    width: 30%;
-    height: 28px;
-    margin: 10px 0 0 15px;
+.button {
+  background: rgb(167, 0, 0);
+  text-align: center;
+  font-size: 18px;
+  width: 60%;
+  height: 30px;
+  margin: 20px 0 0 100px;
 }
 
-label.rad{
-    font-size: 20px;
+.int {
+  font-size: 14px;
+  width: 30%;
+  height: 28px;
+  margin: 10px 0 0 15px;
 }
 
-
-
-
+label.rad {
+  font-size: 20px;
+}
