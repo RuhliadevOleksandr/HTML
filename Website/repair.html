@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/Lab 5/Tasks/DynamicElements/jquery-ui.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <title>Облік заводського інвентаря</title>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready( function() {
+              $('#LeftMunu').menu();
+              $( "#selectMenu").selectmenu();
+            } );
+          </script>
+    </head>
+    <body>
+        <div class="title">
+            <p class="large">ОБЛІК ЗАВОДСЬКОГО ІНВЕНТАРЯ</p>
+        </div>
+        <header class="menu">
+            <ul id="leftMenu">
+                <li><a href="#">Облік</a>
+                    <ul>
+                        <li><a name='dropDown' href="#">Деталі на складі</a></li>
+                        <li><a name='dropDown' href="./accounting.html">Облік підприємства</a></li>
+                        <li><a name='dropDown' href="#">Необхідний ремонт</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">Особи з правом доступу</a></li>
+                <li><a href="./authorization.html" id="auth">Авторизація</a></li>
+        </header>
+        <div class="infoArea">
+            <div id='leftArea' class="upper"><p style="text-align: center;">Облік Підприємства</p>
+
+                <select id="selectMenu">
+                    <option><a href="#">Оприбуткування</a></option>
+                    <option><a href="explotation.html">Передача в експлуатацію</a></option>
+                    <option><a href="Write_off.html">Списання</a></option>
+                </select>
+
+                <form action="add.php" method="post" name="add">
+                    <h4><u>Інструменти які потребують ремонту</u></h4>
+                    <h5>Інструмент:</h5>
+                    <p><input class="int" type="text" name="Name_instrument"></p>
+                    <h5>Назва складу:</h5>
+                    <p><input class="int" type="text" name="Name_storage"></p>
+                    
+                    <p><input class="button" type="submit" name="submitButton" value='На ремонт'></p>
+                    <h4><u>Всі інструменти до ремонту</u></h4>
+                    <p><input class="button" type="submit" name="submitButton" value='Інструменти на ремонті'></p>
+                </form>
+            </div>
+            <div id='rightArea' class="bottom"><p style="text-align: center;">Історія запитів</p></div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
