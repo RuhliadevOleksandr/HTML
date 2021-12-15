@@ -1,2 +1,6 @@
-select Tool.Name as 'Інструмент, що використовується', Worker.FirstName as 'Користувач:', Worker.LastName as 'ПІБ'
-from Tool left join Worker on Tool.WorkerID=Worker.WorkerID where Tool.Description='У використанні'
+UPDATE Tool
+SET Quality = 'used' WHERE ToolID>0 AND Quality='new' AND Name=$Name_instrument;
+
+
+UPDATE Tool
+SET Quality = '$Quality' WHERE  ToolID>0 AND Name=$Name_instrument;

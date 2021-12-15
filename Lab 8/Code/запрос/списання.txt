@@ -1,4 +1,5 @@
-select Tool.ToolID, Tool.Name as 'Інструмент на списання', Tool.Quality as 'Стан' Storage.Name as 'Місце зберігання', 
-from Tool left join Storage on Tool.StorageID=Storage.StorageID where Tool.Quality='Списання';
+UPDATE Tool
+SET Quality = 'unfit' WHERE ToolID>0 and Name=$Name_instrument and (select StorageID from Storage where Name=$NameStorage);
 
-delete from Tool where Tool.Quality='Списання';
+select Tool.ToolID, Tool.Name as 'Інструмент на списання', Tool.Quality as 'Стан', Storage.Name as 'Місце зберігання'
+from Tool left join Storage on Tool.StorageID=Storage.StorageID where Tool.Quality='unfit';

@@ -203,5 +203,26 @@ input[type=radio]{
 }
 
 
+.button{
+    background:  rgb(167, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    width: 60%;
+    height: 30px;
+    margin: 20px 0 0 100px;
+}
+
+.int{
+    font-size: 14px;
+    width: 30%;
+    height: 28px;
+    margin: 10px 0 0 15px;
+}
+
+label.rad{
+    font-size: 20px;
+}
+
+
 
 

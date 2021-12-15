@@ -1,2 +1,6 @@
+UPDATE Tool
+SET Quality = 'brake' WHERE ToolID>0 and Name=$Name_instrument and (select StorageID from Storage where Name=$NameStorage);
+
+
 select Tool.Name as 'Інструмент, що потребує ремонту', Storage.Name as 'Місце зберігання', Storage.Adress as 'за адресою'
-from Tool left join Storage on Tool.StorageID=Storage.StorageID where Tool.Quality='Потребує ремонту'
+from Tool left join Storage on Tool.StorageID=Storage.StorageID where Tool.Quality='brake';
