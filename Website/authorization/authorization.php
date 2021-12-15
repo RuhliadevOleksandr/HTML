@@ -27,16 +27,16 @@
                 <div><form method="POST" action="login.php">
                     <p><b>Оберіть посаду:</b></p><br>
                     
-                    <input type="radio" name="occupation" id="radio_1" value="keeper" <?php if ($_SESSION['occupation'] == 'keeper') echo 'checked'; ?>>
+                    <input type="radio" name="occupation" id="radio_1" value="keeper" <?php if (!empty($_SESSION) and $_SESSION['occupation'] == 'keeper') echo 'checked'; ?>>
                     <label for="radio_1">Комірник</label><br>
-                    <input type="radio" name="occupation" id="radio_2" value="accountant" <?php if ($_SESSION['occupation'] == 'accountant') echo 'checked'; ?>>
+                    <input type="radio" name="occupation" id="radio_2" value="accountant" <?php if (!empty($_SESSION) and $_SESSION['occupation'] == 'accountant') echo 'checked'; ?>>
                     <label for="radio_2">Бухгалтер</label><br>
 
                     <p><b>Введіть логін:</b><br>
-                        <input type="text" name="login" autocomplete="off"     value="<?php echo $_SESSION['login']?>">
+                        <input type="text" name="login" autocomplete="off"     value="<?php if (!empty($_SESSION)) echo $_SESSION['login']?>">
                     </p>
                     <p><b>Введіть пароль:</b><br>
-                        <input type="text" name="password" autocomplete="off"  value="<?php echo $_SESSION['password']?>">
+                        <input type="text" name="password" autocomplete="off"  value="<?php if (!empty($_SESSION)) echo $_SESSION['password']?>">
                     </p>
                     <input type="submit" name="logIn" value="Увійти в систему">
                     <input type="submit" name="logIn" value="Деавторизуватися" formaction="logout.php">
@@ -45,16 +45,15 @@
         
             <div id='rightArea' class="bottom">
                 <h2>Статус авторизації</h2>
-                <p><?php 
-                    if($_SESSION['occupation']=="keeper"){
+                <p><?php
+                    if(empty($_SESSION)){
+                        echo "Ви не авторизувалися або ввели не всі дані.";
+                    } 
+                    else if($_SESSION['occupation']=="keeper"){
                         echo "Ви авторизувалися, ".$_SESSION['login'].". Ваша спеціалізація: комірник.";
                     }
                     else if($_SESSION['occupation']=="accountant"){
                         echo "Ви авторизувалися, ".$_SESSION['login'].". Ваша спеціалізація: бухгалтер.";
-
-                    }
-                    else if(empty($_SESSION)){
-                        echo "Ви не авторизувалися або ввели не всі дані.";
                     }
                 ?>
                 <form action="../index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>

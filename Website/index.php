@@ -1,12 +1,11 @@
 <?php
-$lang=$_GET['lang'];
-if(!empty($lang)){
-    setcookie("lang", $lang, time()+365*24*60*60);
-    $_COOKIE['lang'] = $lang;
-}
+    if(!empty($_GET['lang'])){
+        $lang = $_GET['lang'];
+        setcookie("lang", $lang, time()+365*24*60*60);
+        $_COOKIE['lang'] = $lang;
+    }
 
-
-session_start();
+    session_start();
 ?>
 <html>
     <head>
@@ -42,15 +41,15 @@ session_start();
                 <h2>Інформаційна панель</h2>
                 <?php
 
-                    if($_SESSION['occupation']=="keeper"){
+                    if(empty($_SESSION)){
+                        echo "<p style='color: darkred'>На даний момент ви не авторизовані.</p>";
+                    }
+                    else if($_SESSION['occupation']=="keeper"){
                         echo "<p class='areaTitle'>Ви авторизовані у системі, ".$_SESSION['login'].". <br>Ваша спеціалізація: комірник.</p>";
                     }
                     else if($_SESSION['occupation']=="accountant"){
                         echo "<p class='areaTitle'>Ви авторизовані у системі, ".$_SESSION['login'].". <br>Ваша спеціалізація: бухгалтер.</p>";
-                    }
-                    else if(empty($_SESSION)){
-                        echo "<p style='color: darkred'>На даний момент ви не авторизовані.</p>";
-                    }
+                    } 
                     
                     switch($_COOKIE['lang']){
                         case "ukr":
