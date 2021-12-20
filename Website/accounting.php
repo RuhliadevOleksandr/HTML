@@ -4,6 +4,10 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>>
         <title>Облік заводського інвентаря</title>
+        <?php
+            include 'connect.php';
+            include 'all_Write_off.php';
+        ?>
     </head>
     <body>
         <div class="title">
@@ -31,18 +35,27 @@
                     }
                 ?>
              
-                <form action="add.php" method="post" name="add">
+                <form action="add_Write_off.php" method="post" name="function_accounting">
                     <h4><u>Списання інструменту</u></h4>
                     <h5>Інструмент:</h5>
                     <p><input class="int" type="text" name="Name_instrument"></p>
                     <h5>Назва складу:</h5>
                     <p><input class="int" type="text" name="Name_storage"></p>
-                    
-                    <p><input class="button" type="submit" name="submitButton" value='Списанння'></p>
-                    <h4><u>Всі списані інструменти</u></h4>
-                    <p><input class="button" type="submit" name="submitButton" value='Списані інструменти'></p>
+                    <p><input class="button" type="submit" name="Write_off_New" value='Списання'></p>                            
                 </form>
-
+                <h4><u>Всі списані інструменти</u></h4>  
+                <table width="100%">
+                    <tr>
+                            <th class="st">Код інструменту</th>
+                            <th class="st">Назва інструменту</th>
+                            <th class="st">Стан</th>
+                    </tr>
+                    <tr></tr>
+                    <?php
+                         $all_write_of = get_all($connect);
+                         add_table($all_write_of);
+                    ?>
+                </table>
                 <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
             <div id='rightArea' class="bottom"><h2>Результати запиту</h2></div>
