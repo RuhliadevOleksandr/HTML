@@ -1,4 +1,8 @@
-<?php session_start()?>
+<?php 
+    session_start();
+    include 'storage_queries/connection.php';
+    include 'storage_queries/functions.php';
+?>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -28,17 +32,16 @@
                     }
                 ?>
                 <p>Тут відображені основні форми для взаємодії із базою даних.</p>
-                <!-- <select id="selectMenu">
-                    <option><a href="#">Оприбуткування</a></option>
-                    <option><a href="explotation.html">Передача в експлуатацію</a></option>
-                    <option><a href="Write_off.html">Списання</a></option>
-                </select> -->
                         <!-- Файл add.php пока не создан. -->
                         
-                <form action="add.php" method="post" name="add">
+                <form action="storage_queries/add.php" method="post" name="add">
                     <h4><u>Передача в експлуатацію</u></h4>
                     <h5>Інструмент:</h5>
-                    <p><input class="int" type="text" name="Name_instrument"></p>
+                    <span>
+                        <select name="tool_name" size="1">
+                            <?php add_tool_list_to_exp($con);?>
+                        </select>
+                    </span><br>
                     <h5>Матеріально відповідальна особа:</h5>
                     <p><input class="int" type="text" name="LastName">
                     <input class="int" type="text" name="FirstName"></p>
@@ -46,17 +49,26 @@
                     <p><input class="button" type="submit" name="submitButton" value='Передача в експлуатацію'></p>
                 </form>
 
-                <form action="delete.php" method="post" name="delete">
+                <form action="storage_queries/delete.php" method="post" name="delete">
                     <h4><u>Повернення на склад</u></h4>
+
                     <h5>Інструмент:</h5>
-                    <p><input class="int" type="text" name="Name_instrument"></p>
+                    <span>
+                        <select name="tool_name" size="1">
+                            <?php add_tool_list_to_storage($con);?>
+                        </select>
+                    </span><br>
+
                     <h5>Стан:</h5>
-                    <p><input type="radio" name="Quality" id="1"></p>
+                    <p><input type="radio" name="Quality" id="1" value="new"></p>
                     <label class="rad" for="1">New</label>
-                    <p><input type="radio" name="Quality" id="2"></p>
+                    <p><input type="radio" name="Quality" id="2" value="brake"></p>
                     <label class="rad" for="2">Brake</label>
-                    <p><input type="radio" name="Quality" id="3"></p>
+                    <p><input type="radio" name="Quality" id="3" value="unfit"></p>
                     <label class="rad" for="3">Unfit</label>
+
+                    <p><input style="width: 30px; float:left; height:30px" type="checkbox" name="file_write" id="4" value="Yes"></p>
+                    <label for="4">Записувати історію у файл</label>
 
                     <p><input class="button" type="submit" name="all_instruments" value='Повернення на склад'></p>
                 </form>
@@ -67,6 +79,17 @@
 
              <div id='rightArea' class="bottom"><p style="text-align: center;">
                 <h2>Статус запитів</h2>
+                <h3>Інструменти в експлуатації</h3>
+                <?php
+                    $tools=get_tools_exp($con);
+                    display($tools);
+                ?>
+
+                <h3>Інструменти на складі</h3>
+                <?php
+                    $tools=get_tools_storage($con);
+                    display($tools);
+                ?>
             </div>
         </div>
     </body>
