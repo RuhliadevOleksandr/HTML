@@ -23,12 +23,22 @@ function get_tools_storage($con){
     return $tools;
 }
 
-function display($rows)
+function display($rows, $isInStorage)
 {
-    foreach ($rows as $row) {
-    echo $row["Name"]." ".$row['Quality']." ".$row["LastName"]." ".$row["FirstName"];
-    echo "<br />";
+    echo "<table>";
+    if($isInStorage){
+        echo "<tr><th>Інструмент</th><th>Якість</th></tr>";
+        foreach ($rows as $row) {
+            echo "<tr><th>".$row['Name']."</th><th>".$row['Quality']."</th></tr>";
+        }
     }
+    else{
+        echo "<tr><th>Інструмент</th><th>Прізвище</th><th>Ім'я</th></tr>";
+        foreach ($rows as $row) {
+            echo "<tr><th>".$row['Name']."</th><th>".$row['LastName']."</th><th>".$row['FirstName']."</th></tr>";
+        }
+    }
+    echo "</table>";
 }
 //Adding tools to worker/storage
 function add_tool_list_to_exp($con){

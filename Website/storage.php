@@ -82,13 +82,13 @@
                 <h3>Інструменти в експлуатації</h3>
                 <?php
                     $tools=get_tools_exp($con);
-                    display($tools);
+                    display($tools, false);
                 ?>
 
                 <h3>Інструменти на складі</h3>
                 <?php
                     $tools=get_tools_storage($con);
-                    display($tools);
+                    display($tools, true);
                 ?>
             </div>
         </div>
