@@ -43,6 +43,10 @@
                     <p><input class="int" type="text" name="Name_storage"></p>
                     <p><input class="button" type="submit" name="Write_off_New" value='Списання'></p>                            
                 </form>
+                <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
+            </div>
+            <div id='rightArea' class="bottom">
+                <h2>Результати запиту</h2>
                 <h4><u>Всі списані інструменти</u></h4>  
                 <table width="100%">
                     <tr>
@@ -56,9 +60,7 @@
                          add_table($all_write_of);
                     ?>
                 </table>
-                <form action="index.php"><input type="submit" value="Повернутися на головну сторінку" ></form>
             </div>
-            <div id='rightArea' class="bottom"><h2>Результати запиту</h2></div>
         </div>
     </body>
 </html>
