@@ -1,0 +1,87 @@
+<html> 
+<head>
+    <link rel="stylesheet" href="style.css"> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script> 
+<script> 
+</script> 
+</head> 
+<body>
+    <button id='button2'>Add</button>
+    <button id='button3'>Edit</button>
+    <button id='button4'>Delete</button>
+    <div id="out">
+        <table></table>
+    </div>
+    <p>File name</p>
+    <textarea name="file_name" id="area1" cols="30" rows="10"></textarea>
+    <p>File content</p>
+    <textarea name="file_content" id="area2" cols="30" rows="10"></textarea>
+
+    <script>
+        function refresh(){
+                $.ajax({     
+                type: "GET", 
+                url: "data.xml",  	
+                dataType: "xml",  	
+                success: function(xml) {
+                $('table').html(""); 
+                $(xml).find('file').each(function(){
+                    $(this).find('name').each(function(){ 
+                        $('table').append('<tr><td>'+$(this).text()+'</td></tr>')
+                    })
+
+                    $(this).find('content').each(function(){ 
+                        $('table').append('<tr><td>'+$(this).text()+'</td></tr>')
+                    })
+                    
+                    }) 
+                } 
+                })     
+            }
+        $(document).ready(function(){
+            refresh();
+        })
+        
+        $('#button2').click(function(){
+
+            $.post("process.php",
+            {
+                name: $('#area1').val(),
+                content: $('#area2').val(),
+                button: 2,
+            },
+            function(data, status){
+                alert("File "+ $('#area1').val() +".txt will be created.");
+                refresh();
+            });
+            
+        });
+
+        $('#button3').click(function(){
+            $.post("process.php",
+            {
+                name: $('#area1').val(),
+                content: $('#area2').val(),
+                button: 3,
+            },
+            function(data, status){
+                alert("File "+ $('#area1').val() +".txt will be edited.");
+                refresh();
+            });
+        });
+        
+        $('#button4').click(function(){
+            $.post("process.php",
+            {
+                name: $('#area1').val(),
+                content: $('#area2').val(),
+                button: 4,
+            },
+            function(data, status){
+                alert("File "+ $('#area1').val() +".txt will be deleted.");
+                refresh();
+            });
+        });
+        </script>
+</body> 
+</html>

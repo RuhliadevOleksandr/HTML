@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<folder>
+  <file>
+    <name>file1.txt</name>
+    <content>Some old content.</content>
+  </file>
+  <file>
+    <name>file2.txt</name>
+    <content>
+                Here is the another content of a file.
+        </content>
+  </file>
+</folder>

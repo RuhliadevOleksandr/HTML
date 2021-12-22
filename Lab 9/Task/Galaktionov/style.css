@@ -1,0 +1,43 @@
+p{
+    margin: auto;
+}
+#out{
+    float: right;
+    margin-right: 5%;
+}
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 3px;
+}
+textarea{
+    resize: none;
+    font-size: 20px;
+    display: block;
+}
+#area1{
+    width: 300px;
+    height:30px;
+}
+body{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: rgba(173, 216, 230, 0.5);
+    border: none;
+    border-bottom: 1px solid black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+}
+button:hover{
+    background-color: cornflowerblue;
+    transition: 0.5s;
+}
