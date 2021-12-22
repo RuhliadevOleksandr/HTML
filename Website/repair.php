@@ -28,12 +28,27 @@
                 <li><a href="authorization/authorization.php" id="auth">Авторизація</a></li>
         </header>
         <script>
+            function show(){
+                var indexInTable = -1;
+                var table = document.getElementById('showResult');
+                var toolName = document.getElementById("toolName").value;
+                var storageName = document.getElementById("storageName").value;
+                for (var i = 0, n = table.rows.length; i < n; i++) {
+                    if(table.rows[i].cells[0].innerHTML == toolName){
+                        indexInTable = i;
+                    }
+                }
+                if(indexInTable == -1)
+                    table.insertAdjacentHTML('beforeend', '<tr><th>'+toolName+'</th><th>'+storageName+'</th></tr>');
+                else
+                    table.rows[indexInTable].cells[1].innerHTML = storageName;
+            }
             function addBrakeTool(){  
                 var div = document.getElementById('addResult');
                 if(div.querySelectorAll(".error").length > 0)
                         div.querySelectorAll(".error").forEach(e => e.remove());
                 if( document.getElementById("toolName").value != "" && document.getElementById("storageName").value != ""){
-                    $.post('dataProcessing/submit.php', $('#add').serialize(), function(data) { $("#addResult").html(data) });
+                    $.post('dataProcessing/submit.php', $('#add').serialize(), function(data) { if(!data.includes('error')){show();}$("#addResult").html(data) });
                 }
                 else{
                     div.insertAdjacentHTML('beforeend', '<span class="error">Tool and storage names must be initialize!</span>');
