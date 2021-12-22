@@ -20,7 +20,10 @@
         $hasStorageName = check_if_exist_name($connection, $storageName, 'storage');
         if(empty($hasToolName) and empty($hasStorageName)){
             $query = "UPDATE tool SET Quality='brake', StorageID=(SELECT StorageID FROM storage WHERE Name=\"$storageName\"), WorkerID=NULL WHERE Name=\"$toolName\"";
-            echo check_query($query, $toolName, $connection);
+            $result = check_query($query, $toolName, $connection);
+            if(!str_contains($result, 'error'))
+                add_to_file($toolName, $storageName);
+            echo $result;
         }
         else
             echo $hasToolName . $hasStorageName;
@@ -33,5 +36,14 @@
         foreach ($rows as $row) {
             echo "<tr><th>".$row['ToolName']."</th><th>".$row['StorageName']."</th></tr>";
         }
+    }
+
+    function add_to_file($toolName, $storageName){
+        $file = fopen("data.txt", "a");
+        $mytext = "\r\n\r\nBrake tool:";
+        $mytext .= "\r\nTool: " . $toolName;
+        $mytext .= "\r\nStorage: " . $storageName;
+        fwrite($file, $mytext);
+        fclose($file);
     }
 ?>
