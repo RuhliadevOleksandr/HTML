@@ -21,7 +21,7 @@
         if(empty($hasToolName) and empty($hasStorageName)){
             $query = "UPDATE tool SET Quality='brake', StorageID=(SELECT StorageID FROM storage WHERE Name=\"$storageName\"), WorkerID=NULL WHERE Name=\"$toolName\"";
             $result = check_query($query, $toolName, $connection);
-            if(!str_contains($result, 'error'))
+            if(strpos($result, 'error') === false)
                 add_to_file($toolName, $storageName);
             echo $result;
         }
