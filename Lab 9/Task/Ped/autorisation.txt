@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Авторизация</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+ <body>
+    <div class="form_auth_block">
+    <div class="form_auth_block_content">
+        <p class="form_auth_block_head_text">Реєстрація</p>
+        <form class="form_auth_style" action="#"  onsubmit="return checkPassword(this);">
+        <label>Введіть Вашe ім'я</label>
+        <input type="name" name="name" placeholder="Введіть прізвище та ім'я" required ><br>
+        <label>Виберіть Вашу країну</label>
+        <select onchange="showNames(this.value)" name="сountry" id="сountry">
+          <option selected>Виберіть країну</option>
+          <option value="Poland">Польща</option>
+          <option value="Ukraine">Україна</option>
+          <option value="Russia">Росія</option>
+          <option value="Belarus">Білорусь</option>
+        </select>
+        <label>Виберіть місто</label>
+        <select id="city"></select>
+        <label>Введіть Ваш gmail</label>
+        <input type="email" name="email" placeholder="Введіть Ваш gmail" required >
+                <label>Введіть Ваш пароль</label>
+        <input type="password" id="password" minlength="6" maxlength="20" name="password" placeholder="Введіть пароль" required >
+        <button class="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+        </form>
+    </div>
+    </div>
+ </body>
+</html>
